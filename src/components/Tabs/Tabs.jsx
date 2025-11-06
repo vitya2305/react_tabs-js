@@ -6,7 +6,7 @@ export const Tabs = ({ tabs, activeTabId, onTabSelected }) => {
       <div className="tabs is-boxed">
         <ul>
           {tabs.map(tab => {
-            const isActive = tab.id === activeTabId;
+            const isActive = tab.id === active.id;
 
             return (
               <li
